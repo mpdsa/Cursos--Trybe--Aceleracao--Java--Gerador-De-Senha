@@ -1,16 +1,16 @@
 package com.trybe.acc.java.geradorsenhas;
 
-import java.io.*;
-import java.util.ArrayList;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
+/** Classe que cria senha e escreve no arquivo cada senha gerada, na pasta /tmp/ . */
 public class GeradorSenhas {
   public static final Integer NUM_SENHAS = 10;
 
   // TROQUE O CAMINHO PARA O DIRETORIO DE DESTINO DOS SEUS ARQUIVOS
-  public static final String pastaRaiz = "home/li0001/Projetos/Aceleração/";
-  public static final String pastaProjeto = "acc-java-06-exercises-gerador-senhas/";
-  public static final String pastaFinal = "src/main/java/com/trybe/acc/java/geradorsenhas/senhas/";
-  public static final String DIRETORIO_DESTINO = "/" + pastaRaiz + pastaProjeto + pastaFinal;
+  public static final String DIRETORIO_DESTINO = "/tmp/";
 
   /**
    * Método principal.
